@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Title</title>		
+		<meta charset='utf8'>
+		<meta name="theme-color" content="#ff6654">
+		<link rel='shortcut icon' href='icon.png'>
+		<link rel="manifest" href="manifest.json">
+		<script src="sw.js"></script>
+		<script src="js.js"></script>
+		<link rel="stylesheet" href="css.css">
+	</head>
+	<body itemscope itemtype="http://schema.org/WebPage" on load="location.hash='inicio'"> 
+		<header itemprop='mainContentOfPage' itemscope itemtype='http://schema.org/WPHeader' id='header'>
+        <meta itemprop='name' content='header'>
+			<h1>Página da empresa xxx</h1>
+        	<div itemprop='author' itemscope itemtype='http://schema.org/Organization'>
+        		<meta itemprop='name' content='Nome do autor'>
+        	</div>			
+		</header>
+		<section itemprop='breadcrumb' itemscope itemtype='http://schema.org/BreadcrumbList' id='bredcrumb'></section>
+		<section itemprop='mainContentOfPage' itemscope itemtype='http://schema.org/WPAdBlock' id='adblock'></section>
+		<section itemprop='mainContentOfPage' itemscope itemtype='http://schema.org/SiteNavigationElement' id='menu'>
+			<ul itemprop='potentialAction' itemscope itemtype='http://schema.org/ControlAction' id='categories'>
+            	<meta itemprop='name' content='Categories'>
+                <meta itemprop='description' content='Access to the WebPage categories'>
+            	<li itemprop='potentialAction' itemscope itemtype='http://schema.org/ActivateAction'><span itemprop='name'><a href="#inicio" itemprop='url'>Início</a></span></li>
+            	<li itemprop='potentialAction' itemscope itemtype='http://schema.org/ActivateAction'><span itemprop='name'><a href="#eventos" itemprop='url'>Eventos</a></span></li>
+            	<li itemprop='potentialAction' itemscope itemtype='http://schema.org/ActivateAction'><span itemprop='name'><a href="#servicos" itemprop='url'>Serviços</a></span></li>
+            	<li itemprop='potentialAction' itemscope itemtype='http://schema.org/ActivateAction'><span itemprop='name'><a href="#contato" itemprop='url'>Contato</a></span></li>
+			</ul>
+		</section>
+		<main itemprop='mainContentOfPage' itemscope itemtype='http://schema.org/WebPageElement' id='main'></main>
+		<footer itemprop='mainContentOfPage' itemscope itemtype='http://schema.org/WPFooter' id='footer'></footer>
+	</body>
+</html>

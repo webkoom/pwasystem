@@ -3,4 +3,8 @@ api_version: 1
 
 handlers:
 - url: /.*
-  script: helloworld.php
+  script: index.html
+  
+- url: /(.*\.(gif|png|jpg))$
+static_files: static/\1
+upload: static/.*\.(gif|png|jpg)$

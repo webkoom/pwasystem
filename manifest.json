@@ -1,0 +1,17 @@
+{
+	"short_name":"pwapush",
+	"name": "PWA Push",
+	"icons":[
+		{
+			"src":"icon.png",
+			"sizes":"192X192",
+			"type":"image/png"
+		}
+	],
+	"start_url":"index.html",
+	"orientation":"portrait",
+	"display":"standalone",
+	"theme-color":"cor",
+	"background-color":"dimgray",
+	"gcm_sender_id": "66948562378"
+}
